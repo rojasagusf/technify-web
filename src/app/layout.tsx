@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
-import "./globals.css";
+import './globals.css';
 import 'normalize.css/normalize.css';
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import React from 'react';
 
-const monserrat = Montserrat({ 
-  subsets: ["latin"], 
-  weight: ['400', '700', '900'] 
+const monserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['400', '700', '900'],
 });
 
 export const metadata: Metadata = {
-  title: "Technify",
-  description: "App to listen techno music",
+  description: 'App to listen techno music',
+  title: 'Technify',
 };
 
 export default function RootLayout({
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${monserrat.className} antialiased`}>{children}</body>
+      <body className={`${monserrat.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
