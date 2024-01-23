@@ -17,6 +17,7 @@ const config: Config = {
       colors: {
         absoluteDark: '#000000',
         absoluteLight: '#ffffff',
+        activeGray: '#232323',
         darkestGray: '#121212',
       },
     },

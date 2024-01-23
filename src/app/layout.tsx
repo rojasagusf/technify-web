@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${monserrat.className} antialiased`}>
+      <body className={`${monserrat.className} antialiased h-screen bg-absoluteDark text-absoluteLight grid grid-cols-8 grid-rows-12 gap-2 p-2`}>
         {children}
       </body>
     </html>
